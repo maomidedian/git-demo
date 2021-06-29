@@ -1,0 +1,5 @@
+创建分支  Switched to a new branch 'login'
+git checkout -b login
+
+查看分支
+git branch

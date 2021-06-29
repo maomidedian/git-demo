@@ -1,8 +1,9 @@
-import { ElButton } from 'element-plus'
-import lang from 'element-plus/lib/locale/lang/zh-cn'
-import locale from 'element-plus/lib/locale'
+import Vue from 'vue'
+import { Button, Form, FormItem, Input, Message } from 'element-ui'
 
-export default (app) => {
-  locale.use(lang)
-  app.use(ElButton)
-}
+Vue.use(Button)
+Vue.use(Form)
+Vue.use(FormItem)
+Vue.use(Input)
+// 全局挂载
+Vue.prototype.$message = Message
